@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Park Highlights</title>
+
+    <link href="yellowstonestyles.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts provided by the Google API-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text&family=Oxygen:wght@400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--  overall grid with two columns-->
+        <div id = "parent-grid">
+            
+            <!-- Navigation bar on top-->
+            <div class="flex-container">
+                <div class="flex-item"><a href="homepage.html">Home</a></div>
+                <div class="flex-item"><a href="parkhighlights.html">Park Highlights</a></div>
+                <div class="flex-item"><a href="wildlife.html">Wildlife & Nature</a></div>
+                <div class="flex-item"><a href="recreation.html">Activities</a></div>
+                <div class="flex-item"><a href="Fees&Payment.html">Plan Your Trip</a></div>
+              </div>
+
+
+        <!-- flexcolumn -->
+        <div class = "flex-fullscreen">
+
+            <div class="itemTitle">
+                <div class="titleWrapper" >
+                  <h1 id = "titleWrapper">Yellowstone National Park Highlights</h1>
+                </div>
+                <img src="yellowstone.jpeg" alt="Image" id = "topimage">
+            </div>
+
+            <!-- Intro Text-->
+            <div class="introtext">
+                <h3> Yellowstone National Park is a vast and diverse area with a variety of natural wonders to explore. 
+                    From its famous geysers and hot springs to its scenic hiking trails and wildlife viewing areas, 
+                    there is no shortage of sites to see and activities to enjoy. Below are a just few of the most iconic 
+                    sites at Yellowstone National Park. You can view the full <a href="officialmap.html">National Park Service map</a> to discover more of what Yellowstone National Park has to offer. </h3>
+
+            </div>
+
+            <!-- Box1-->
+
+            <div class = "flexbox"> 
+
+                <div> <h2> Grand Prismatic Spring</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/grandprismatic.jpeg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content4')"> 
+                    <span class="title-text">
+                        Description
+                    </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content4" class="boxcontent" style="display: none;">
+                        <div> <p> The Grand Prismatic Spring, located in the Midway Geyser Basin, is the largest hot spring in the United States, and the third largest in the world. Its dimensions are impressive, with a diameter of approximately 112.8 meters and a depth of around 48.8 meters.
+
+                            One of the most striking features of the Grand Prismatic Spring is its vibrant coloration, which ranges from a deep blue in the center to bright bands of orange, yellow, and green on the outer edges. This incredible color display is due to the varying types of heat-loving bacteria known as thermophiles that live in the different temperature zones of the spring.
+                            
+                            The blue color in the center of the pool is the result of the water's depth and purity, which absorbs all colors of sunlight except for the blue that is reflected back to our eyes. The bands of orange, yellow, and green are caused by the different species of thermophiles. The outermost band, which is typically brown or red, is the coolest and supports the most diverse microbial life.
+                            
+                            The Grand Prismatic Spring is one of the most photographed features in all of Yellowstone due to its surreal beauty and vivid colors, making it a must-see attraction for visitors to the park.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content5')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content5" class="boxcontent" style="display: none;">
+                        <img src="Photos/grandspringmap.jpg" alt="Grand Prismatic Spring Map">
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content6')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content6" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p > 
+                                The best time to visit the Grand Prismatic Spring is between May and September. These are the months during which the colors are the most vivid. We also recommend going during midday, as the mist will have burned off and so the colors will be most visible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 2-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Old Faithful</h2></div>
+
+                <div class="image-container"> 
+                    <img src="oldfaithful.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content1')"> 
+                        <span class="title-text">
+                            Description
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content1" class="boxcontent" style="display: none;">
+                        <div> <p> Old Faithful, located in the Upper Geyser Basin, is one of the most famous geysers in the world. Known for its predictability, it erupts approximately every 60 to 110 minutes, with each eruption lasting between 1.5 to 5 minutes.
+
+                            The geyser was named "Old Faithful" by the Washburn-Langford-Doane Expedition in 1870, due to its regular eruption pattern. The eruptions blast heated water and steam to an average height of 40-43 meters, though it can reach up to 55 meters on occasion. Each eruption expels 14,000 to 32,000 liters of boiling water.
+                            
+                            
+                            Old Faithful is not the largest or the most regular geyser in Yellowstone, but it is the most predictable of the large geysers. This, combined with its convenient location near park accommodations, has made it one of the most popular and recognized natural features in the entire park.
+                            
+                            Visitors can watch this natural wonder from a viewing area that provides a safe and unobstructed view of each spectacular eruption, making Old Faithful a must-see attraction when visiting Yellowstone National Park.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content2')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content2" class="boxcontent" style="display: none;">
+                        <img src="Photos/oldfaithfulmap.jpg" alt="Old Faithful Map">
+                        <!-- You can also add a textbox or other content here -->
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content3')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content3" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                Due to its regular eruption patterns, Old Faithful can be seen anytime during the year. We recommend you go before 11:00 a.m. to avoid the crowds and therefore get a spot to view the eruption. If you really want to make sure you get a good viewing spot, show up 30 minutes before the next predicted eruption. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box3-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Mammoth Hot Springs</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/mammothspring.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content7')"> 
+                    <span class="title-text">
+                        Description
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content7" class="boxcontent" style="display: none;">
+                        <div> <p> Mammoth Hot Springs, located in the northern region of Yellowstone National Park, is a large complex of hot springs on a hill of travertine. Unlike the park's other thermal features which are primarily geysers or pools, Mammoth Hot Springs is primarily known for its terraces - striking, step-like formations created by the deposition of minerals from the hot spring water.
+
+                            The water that feeds Mammoth comes from Norris Geyser Basin after traveling underground via a fault line. As the hot water travels, it picks up calcium and bicarbonate, and when the water reaches the surface and cools, it deposits these elements. Over thousands of years, the deposits have formed large terraces of travertine.
+                            
+                            The terraces are constantly changing shape and color. The color variations are due to the different types of thermophiles living in the various temperature zones of the springs. The hues range from white to shades of orange, pink, yellow, and green.
+                            
+                            One of the most notable features of the Mammoth Hot Springs is the Minerva Terrace, known for its ornate travertine formations. Another popular spot is the Canary Spring, named for its bright yellow appearance.
+                            
+                            In addition to its unique geothermal features, the Mammoth Hot Springs area is the administrative center of Yellowstone National Park and hosts the historic Fort Yellowstone. </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content8')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content8" class="boxcontent" style="display: none;">
+                        <img src="Photos/mammothmap.jpg" alt="mammoth Springs Map">
+                        <!-- You can also add a textbox or other content here -->
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content9')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+
+                    <div id = "content9" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                We recommend that you visit the Mammoth Hot Springs sometime in early summer or in early fall. During these times of the year, the temperatures are cooler and therefore it is more likely you’ll see 
+                                striking steam formations coming from the springs. The Mammoth Hot Springs are also one of the most viewed attractions in the park, so we recommend visiting during a less busy part of the day (before 10 a.m. 
+                                or after 5 p.m.).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 4-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Grand Canyon of the Yellowstone</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/grandcanyon.jpeg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content10')"> 
+                    <span class="title-text">
+                        Description
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content10" class="boxcontent" style="display: none;">
+                        <div> <p> The Grand Canyon of the Yellowstone is a breathtaking natural feature located in the Canyon Village of Yellowstone National Park. This magnificent canyon is approximately 39 kilometers long, between 244 and 366 meters deep, and up to 1,219 meters wide.
+
+                            The canyon is a result of erosion and was formed by the Yellowstone River cutting down into the layers of volcanic rock after a series of volcanic eruptions about 600,000 years ago. The yellow, pink, and orange colored cliffs of the canyon get their hues from the iron compounds in the rocks, and the area has been subjected to both thermal and chemical weathering, further enhancing the stunning coloration.
+                            
+                            The Grand Canyon of the Yellowstone is most famous for its two primary waterfalls: the Upper and Lower Yellowstone Falls. The Upper Falls is the smaller of the two, plunging a dramatic 33 meters. The Lower Falls, often considered the more impressive, cascades down 94 meters into the canyon. The sight of these waterfalls dropping into the deep, colorful canyon is a truly iconic view and one of the most photographed sights in the entire park.
+                            
+                            Several vantage points offer different perspectives of the canyon and waterfalls, such as Artist Point, Lookout Point, and Inspiration Point. These viewpoints are accessible through trails and offer unforgettable panoramic vistas of the canyon, making it a must-see attraction for anyone visiting Yellowstone National Park.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content11')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content11" class="boxcontent" style="display: none;">
+                        <img src="Photos/canyonmap.jpg" alt="Grand Canyon Map">
+                        <!-- You can also add a textbox or other content here -->
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content12')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content12" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                The best time to visit the Grand Canyon of Yellowstone would be in the morning. Firstly, the crowds will be much less. Secondly, in the mornings, the sun illuminates the canyon which offers a much better viewing and photography experience. Once the sun moves west in the afternoon, the waterfalls are in the shadows. Also, in the mornings, you are more likely to see a beautiful rainbow over the canyon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 5-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Lamar Valley</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/lamarvalley.jpeg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content13')"> 
+                    <span class="title-text">
+                        Description
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content13" class="boxcontent" style="display: none;">
+                        <div> <p> The Lamar Valley, located in the northeastern corner of Yellowstone National Park, is a stunning, expansive valley often referred to as the "Serengeti of North America" due to its diverse and abundant wildlife.
+
+                            Stretching approximately 47 kilometers from Tower Junction to the park's Northeast Entrance, the Lamar Valley is a wide, verdant valley carved by the Lamar River. The area is characterized by rolling hills, large, grassy meadows, and scattered patches of forest, providing an ideal habitat for a variety of wildlife species.
+                            
+                            This region of the park is renowned for its unparalleled wildlife viewing. It's home to large herds of bison and pronghorn antelope, and it's also one of the best places in the world to view wild wolves, following their reintroduction to Yellowstone in 1995. Other wildlife often spotted in the Lamar Valley includes grizzly and black bears, bald eagles, osprey, deer, and coyotes.
+                            
+                            In addition to its wildlife, the Lamar Valley offers beautiful scenic views, with sweeping landscapes that seem almost untouched by human influence. It's a popular spot for hiking, fishing, and camping, with several trails and campsites available.
+                            
+                            The Lamar Valley is accessible year-round, and it's a must-visit destination for nature lovers and wildlife enthusiasts. Its serene beauty and rich ecosystem make it a unique part of Yellowstone National Park.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content14')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content14" class="boxcontent" style="display: none;">
+                        <img src="Photos/lamarvalleymap.jpg" alt="Image description">
+                        <!-- You can also add a textbox or other content here -->
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content15')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content15" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                The best time to visit the Lamar Valley is around dawn or dusk. At these time, the animals are most active and 
+                                therefore you’ll have the best chance of viewing the variety amazing wildlife that inhabit Yellowstone. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 6-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Morning Glory Pool</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/morningpool.jpeg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content16')"> 
+                    <span class="title-text">
+                        Description
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content16" class="boxcontent" style="display: none;">
+                        <div> <p> The Morning Glory Pool is a stunning hot spring located in the Upper Geyser Basin. Renowned for its radiant, multicolored display, it's considered one of the most beautiful sights in the park.
+
+                            The pool is approximately 7 meters deep with an average temperature of about 77.6°C. The vibrant colors that make the Morning Glory Pool so distinctive are a result of its specific microbial communities. The center of the pool displays a deep, stunning blue, which is the result of the physical properties of water. The water's clarity and depth allow it to absorb all colors of sunlight except for blue, which is reflected back to our eyes.
+                            
+                            Around the edges of the pool, the color gradient transitions from blue to hues of green, yellow, and orange. These bands of color are created by different species of thermophilic bacteria that thrive in varying water temperatures. The cooler the water, the more orange and yellow the bacteria, leading to these stunning rings of color around the pool's edge.
+                            
+                            The Morning Glory Pool got its name due to its striking resemblance to the morning glory flower, a name that wonderfully captures its natural beauty. It is one of the park's most photographed features and provides an excellent demonstration of the diverse lifeforms that can thrive in Yellowstone's unique geothermal environment.
+                            .</p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content17')"> 
+                        <span class="title-text">
+                            Map
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content17" class="boxcontent" style="display: none;">
+                        <img src="Photos/morningpoolmap.jpeg" alt="Morning Glory Pool Map">
+                        
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content18')"> 
+                        <span class="title-text">
+                            Best Time to Visit
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content18" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                We recommend that you visit the Morning Glory Pool some between March and November, as it can be difficult to reach during the winter months. For the best photography, we recommend that you visit sometime before 12 a.m., as the lighting is the best during these times. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+
+        </div>
+
+        <script src="YSNPscript.js"> 
+            
+        </script>
+    </body>
+</html>

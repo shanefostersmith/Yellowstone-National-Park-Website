@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wildlife and Nature</title>
+
+    <link href="yellowstonestyles.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts provided by the Google API-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text&family=Oxygen:wght@400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--  overall grid with two columns-->
+        <div id = "parent-grid">
+            
+            <!-- Navigation bar on top-->
+            <div class="flex-container">
+                <div class="flex-item"><a href="homepage.html">Home</a></div>
+                <div class="flex-item"><a href="parkhighlights.html">Park Highlights</a></div>
+                <div class="flex-item"><a href="wildlife.html">Wildlife & Nature</a></div>
+                <div class="flex-item"><a href="recreation.html">Activities</a></div>
+                <div class="flex-item"><a href="Fees&Payment.html">Plan Your Trip</a></div>
+              </div>
+
+
+        <!-- flexcolumn -->
+        <div class = "flex-fullscreen">
+
+            <div class="itemTitle">
+                <div class="titleWrapper" >
+                  <h1 id = "titleWrapper">Wildlife and Nature</h1>
+                </div>
+                <img src="Photos/buffalo.jpeg" alt="Image" id = "topimage">
+            </div>
+
+            <!-- Intro Text-->
+            <div class="introtext">
+                <h3> Yellowstone National Park is a natural wonderland, boasting stunning geothermal features, 
+                    diverse ecosystems, and abundant wildlife. With over 10,000 geothermal features, Yellowstone's 
+                    geology is world-renowned. The park is also home to over 1,000 species of plants, from wildflowers
+                     to towering conifers, and diverse wildlife, including iconic mammals such as grizzly bears, bison, 
+                     and wolves. Whether you're a geology buff, a nature lover, or simply seeking adventure, Yellowstone 
+                     offers an unforgettable experience that is sure to leave a lasting impression. </h3>
+
+            </div>
+
+            <!-- Box1-->
+
+            <div class = "flexbox"> 
+
+                <div> <h2> Yellowstone's Geology</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/calderadiagram.jpeg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content4')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content4" class="boxcontent" style="display: none;">
+                        <div> <p>Yellowstone National Park is renowned for its geothermal activity and diverse geological features. At the heart of the park lies the Yellowstone Caldera, one of the largest active volcanic systems in the world. The park sits atop the Yellowstone Hotspot, a plume of molten rock rising from the Earth's mantle, which is responsible for the area's significant geothermal activity.</p>
+
+                            <p>The Yellowstone Caldera, often referred to as the Yellowstone Supervolcano, is a volcanic caldera and supervolcano that was created by a massive volcanic eruption approximately 640,000 years ago. This eruption was one of the most cataclysmic events in the Earth's recent history, covering much of the North American continent with volcanic ash and dramatically affecting global climate.</p>
+                            
+                            <p>The caldera measures about 55 by 72 kilometers, and its enormous size can be difficult to comprehend as it encompasses a large portion of the park. The term "caldera" refers to a large volcanic crater, typically formed by a major eruption leading to the collapse of the mouth of the volcano.</p>
+                            
+                            <p>Since the last major eruption, there have been numerous smaller eruptions and lava flows, the most recent of which occurred about 70,000 years ago. The park's geothermal features, including its famous geysers like Old Faithful, hot springs, mud pots, and fumaroles, are a result of this ongoing volcanic activity.</p>
+                            
+                            <p>The surface of the Yellowstone Caldera also rises and falls as magma moves and pressure shifts in the underlying volcanic system. This ground deformation is monitored closely by scientists as an indicator of changes in the underlying magmatic system.</p>
+                            
+                            <p>Yellowstone's unique geological history has also greatly influenced its landscape and ecology. The rich volcanic soil supports a diverse array of plant life, and the park's many thermal features create unique habitats for a variety of microorganisms. Furthermore, the park's large-scale geological structures have played a role in shaping its grand vistas, canyons, and waterfalls.</p>
+                            
+                            <p>In summary, the geology of Yellowstone National Park and the Yellowstone Caldera is a story of dynamic earth processes, vast eruptions, and ongoing geothermal activity, all of which have created and continue to shape this unique natural landscape.</p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content5')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content5" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Old Faithful and Upper Geyser Basin: Home to the famous Old Faithful geyser and the largest concentration of geysers in the world.</li>
+                            <li>Grand Prismatic Spring and Midway Geyser Basin: Contains the largest hot spring in the United States, known for its striking colors.</li>
+                            <li>Norris Geyser Basin: The oldest and hottest of Yellowstone's thermal areas, with features like the Steamboat Geyser, the tallest active geyser in the world.</li>
+                            <li>Mammoth Hot Springs: Famous for its large complex of hot springs on a hill of travertine.</li>
+                            <li>Lower Geyser Basin: Includes the Fountain Paint Pot, a pool of bubbling mud that changes with the seasons, and the Great Fountain Geyser.</li>
+                            <li>Yellowstone Lake and West Thumb Geyser Basin: Features an interesting collection of hot springs, mudpots, and geysers, some of which are even located under the lake.</li>
+                          </ul>
+                          
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content6')"> 
+                        <span class="title-text">
+                            Safety and Special Consideration
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content6" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Follow all park regulations and warning signs.</li>
+                                <li>Stay on designated paths and boardwalks to avoid stepping on unstable ground that could result in severe burns, injuries, and even death.</li>
+                                <li>Keep a safe distance from geothermal features, which can be dangerously hot and unpredictable. The National Park Service recommends staying at least 25 yards (23 meters) away from hot springs and geysers.</li>
+                                <li>Supervise children closely and make sure they stay on designated paths and boardwalks to avoid wandering off the paths, which can be extremely dangerous.</li>
+                                <li>Be prepared for changing weather conditions, as Yellowstone's weather can be unpredictable and temperatures can vary greatly throughout the day. Bring appropriate clothing, sunscreen, and plenty of water.</li>
+                                <li>Do not throw anything into geothermal features, such as rocks or coins, which can damage the features and harm the delicate ecosystem.</li>
+                                <li>Avoid swimming in geothermal features, which is strictly prohibited in Yellowstone National Park. The water temperatures can reach boiling temperatures and can cause severe burns and injuries.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 2-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Plant Life </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/flower.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content1')"> 
+                        <span class="title-text">
+                            General Information
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content1" class="boxcontent" style="display: none;">
+                        <div>  <p>The plant life of Yellowstone National Park is diverse and resilient, covering an array of ecosystems from alpine meadows to lush forests, thermal areas, and aquatic environments. The park is home to over 1,700 species of native vascular plants and more than 170 species of exotic (non-native) plants. <p>
+
+                            <p> Predominantly, the park is covered by coniferous forest, composed largely of lodgepole pine, which makes up nearly 80% of the park's forests. Other tree species include Douglas fir, Engelmann spruce, whitebark pine, and subalpine fir. These forests provide essential habitats for many of the park's wildlife species and play a crucial role in the ecosystem. <p>
+                            
+                            <p> Yellowstone's thermal areas, with their extreme conditions, host specially adapted plant life. Thermophiles, microorganisms that thrive in the hot, acidic conditions of geysers and hot springs, create colorful mats and contribute significantly to the park's biodiversity. <p>
+                            
+                            <p> The park's grasslands and meadows are home to a variety of grasses, sedges, and wildflowers, which bloom in a burst of color during the short summer season. Species include lupines, asters, Indian paintbrush, and the Yellowstone sand verbena, a plant found nowhere else in the world. <p>
+                            
+                            <p> Riparian zones along the park's rivers and lakes support cottonwood and willow trees, while the park's wetlands are teeming with rushes, sedges, and other moisture-loving plants. These areas are critical for many of Yellowstone's birds and mammals.<p>
+                            
+                            <p> At higher elevations, alpine vegetation prevails. Here, due to a shorter growing season and harsh weather conditions, plants are typically smaller and grow closer to the ground. Wildflowers, mosses, and lichens are common in these areas. <p>
+                            
+                            
+                            <p> Yellowstone's plant life plays a vital role in supporting the park's diverse array of wildlife. Many species rely on plants for food, shelter, and breeding grounds. From the smallest microorganisms to the park's largest mammals, life in Yellowstone is deeply interconnected with its plant life. <p>
+                            
+                            <p> If you’d like to learn more about the specific types/species of plant life you can find at Yellowstone National Park, you can visits the National Park Service’s <a href= https://www.nps.gov/yell/learn/nature/plants.htm#:~:text=Trees%3A%20nine%20conifers%20(lodgepole%20pine,species)%2C%20Rocky%20Mountain%20maple.”> official page </a> about Yellowstone’s plant life. <p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content2')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content2" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Lamar Valley: Known as the "Serengeti of North America," this area offers expansive grasslands that support a variety of plant species and provide grazing for large herds of bison and elk.</li>
+                            <li>Norris Geyser Basin: Beyond the geothermal features, this area is home to unique plant species that thrive in the hot, acidic soils.</li>
+                            <li>Yellowstone Lake: The areas around the lake, especially at higher elevations, feature a mix of forest and meadow habitats with a wide variety of plant species.</li>
+                            <li>Mammoth Hot Springs: The terraces around the hot springs harbor unique thermophilic plants, while the surrounding areas feature sagebrush, grasslands, and mixed coniferous forests.</li>
+                            <li>Mount Washburn: A popular hiking destination, the trails up this mountain pass through wildflower-filled meadows and high-altitude whitebark pine forests.</li>
+                            <li>Hayden Valley: This wide, grassy valley is filled with wildflowers in the spring and summer and is a favorite grazing spot for bison and elk.</li>
+                          </ul>
+                          
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content3')"> 
+                        <span class="title-text">
+                            Safety and Special Considerions
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content3" class="boxcontent" style="display: none;">
+                        <div> 
+                                <ul>
+                                    <li>Stay on designated trails to protect fragile plant life and prevent trampling on sensitive areas.</li>
+                                    <li>Do not pick or disturb plants, including wildflowers, berries, and other vegetation, as it is prohibited in Yellowstone National Park.</li>
+                                    <li>Respect closures and restrictions, as some areas may be closed for plant restoration, research, or other purposes.</li>
+                                    <li>Leave no trace and pack out all trash and dispose of it properly to prevent littering and protect plant life.</li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box3-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Mammals </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/elk.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content7')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content7" class="boxcontent" style="display: none;">
+                        <div> <p> Yellowstone National Park is a sanctuary for an impressive variety of mammals. It hosts 67 species, ranging from tiny shrews and bats to large ungulates and the iconic predators of North America.<p>
+
+                            <p> Perhaps the most iconic of Yellowstone's mammals are its herds of American bison. With numbers in the thousands, Yellowstone is the only place in the U.S. where bison have lived continuously since prehistoric times. Their massive size and social behavior make them a favorite among visitors.<p>
+                            
+                            <p> The park is also home to two species of bears: grizzlies and black bears. Grizzly bears, characterized by their humped shoulders and silver-tipped fur, are a symbol of the wild and are respected and feared for their power and unpredictability. Black bears are smaller and more adaptable, often seen in both the park's forests and meadows.<p>
+                            
+                            <p> Yellowstone is one of the best places in the world to observe gray wolves in their natural habitat. Reintroduced to the park in the mid-1990s, wolves have had a profound impact on the park's ecosystem, influencing the behavior and numbers of other species.<p>
+                            
+                            <p>Elk are the most abundant large mammal in the park, with numbers peaking at around 20,000 in the summer. Their seasonal migrations are an impressive spectacle and vital to the park's ecological balance. Other ungulates include mule deer, white-tailed deer, pronghorn, bighorn sheep, and moose.<p>
+                            
+                            <p> Smaller mammals, though often overlooked, are just as important in Yellowstone's ecosystem. Beavers, known as ecosystem engineers, alter landscapes by building dams, creating wetland habitats that support many species. The park also hosts numerous species of rodents, shrews, bats, and carnivores such as coyotes, red foxes, badgers, and river otters, each play significant roles in the food web. Coyotes are often seen hunting in open meadows, while foxes are more elusive. River otters, though primarily aquatic, can also be found far from water. <p>
+                            
+                            <p> Yellowstone also has a wide variety of bat species. While they might not be the first animals people think of when they consider Yellowstone's wildlife, bats play a critical role in the ecosystem by controlling insect populations.<p>
+                            
+                            <p> In sum, the mammal life in Yellowstone National Park represents a diverse range of species across various habitats. Their interactions, from predation to symbiosis, drive the dynamics of the park's ecosystems. Yellowstone provides a unique opportunity for visitors to observe these animals in their natural habitats and plays a crucial role in their conservation. If you’d like to learn more about the specific types of mammal you can see at Yellowstone, you can visit the National Park Service’s <a href=https://www.nps.gov/yell/learn/nature/mammals.htm> official page </a> about mammals at Yellowstone. <p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content8')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content8" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Lamar Valley - known for its abundant wildlife, including wolves, bison, and elk.</li>
+                            <li>Hayden Valley - offers opportunities to see bison, grizzly bears, and wolves.</li>
+                            <li>Tower-Roosevelt Area - known for its herds of bison and pronghorn antelope.</li>
+                            <li>Lamar Canyon - provides a chance to see bighorn sheep and mountain goats.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content9')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+
+                    <div id = "content9" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Keep a safe distance from wildlife and use binoculars or a telephoto lens to view animals up close without disturbing them.</li>
+                                <li>Never feed wildlife, as it can lead to dangerous behavior and dependency on human food.</li>
+                                <li>Do not approach or attempt to touch wild animals, even if they appear to be docile or injured.</li>
+                                <li>Stay on designated trails and use pullouts when viewing wildlife from a vehicle to avoid causing traffic congestion.</li>
+                                <li>Be aware of the surrounding environment and stay alert for any changes in animal behavior, which can indicate that the animal feels threatened or stressed.</li>
+                                <li>Respect closures and restrictions in areas that may be closed for wildlife protection, migration routes, or other purposes.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 4-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Birds </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/raptor.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content10')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content10" class="boxcontent" style="display: none;">
+                        <div> <p>Yellowstone National Park is a haven for bird species, with over 300 species having been documented within its boundaries. The park's diverse ecosystems, ranging from aquatic environments to forests and grasslands, provide a variety of habitats that support a wide array of bird life.<p>
+
+                            <p> Among the most iconic birds in Yellowstone is the bald eagle, a symbol of the United States. These majestic birds of prey can often be spotted soaring over the park's rivers and lakes in search of fish. The park is also home to golden eagles, ospreys, and a variety of hawks and falcons, all of which play crucial roles as predators.<p>
+                            
+                            <p> Waterfowl are abundant in the park, especially in and around Yellowstone's rivers, lakes, and wetlands. Species include the common loon, known for its eerie calls, as well as several types of ducks, geese, and swans. The American white pelican, a large and striking bird, can also be seen on the park's larger bodies of water.<p>
+                            
+                            <p> The park's forests are home to numerous songbirds and woodpeckers. You might hear the drumming of the pileated woodpecker in the forest, or the distinctive song of the western meadowlark, the state bird of Wyoming, in open grasslands.<p>
+                            
+                            <p> Several species of owls can be found in the park, including great horned owls, northern pygmy-owls, and the elusive great gray owl. These nocturnal predators are an important part of the park's ecosystem, controlling rodent populations.<p>
+                            
+                            <p> The greater sage-grouse, an emblematic bird of the West, performs its elaborate mating dance in the sagebrush habitats of the park. Other ground-dwelling birds include the wild turkey and the dusky grouse.<p>
+                            
+                            <p> Birds in Yellowstone also include species that are less commonly seen but are of great interest to birdwatchers, such as the white-tailed ptarmigan, peregrine falcon, and the trumpeter swan, the largest waterfowl species in North America.<p>
+                            
+                            <p> Whether you are a casual birdwatcher or a serious ornithologist, Yellowstone offers an unparalleled opportunity to observe and appreciate a wide variety of bird species. If you’d like to learn more about the specific species of birds you see at Yellowstone, you can visit the National Park Service’s <a href=”https://www.nps.gov/yell/learn/nature/birds.htm”> official page </a> about birds at Yellowstone. <p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content11')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content11" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Hayden Valley - offers opportunities to see a variety of bird species, including sandhill cranes, osprey, and bald eagles.</li>
+                            <li>Lamar Valley - provides a chance to see a variety of raptors, including golden eagles, peregrine falcons, and red-tailed hawks.</li>
+                            <li>Pelican Valley - known for its large populations of pelicans and other waterfowl.</li>
+                            <li>Yellowstone Lake - offers opportunities to see a variety of waterbirds, including loons, grebes, and ducks.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content12')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content12" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Keep a safe distance from wildlife and use binoculars or a telephoto lens to view animals up close without disturbing them.</li>
+                                <li>Never feed wildlife, as it can lead to dangerous behavior and dependency on human food.</li>
+                                <li>Do not approach or attempt to touch wild animals, even if they appear to be docile or injured.</li>
+                                <li>Stay on designated trails and use pullouts when viewing wildlife from a vehicle to avoid causing traffic congestion.</li>
+                                <li>Be aware of the surrounding environment and stay alert for any changes in animal behavior, which can indicate that the animal feels threatened or stressed.</li>
+                                <li>Respect closures and restrictions in areas that may be closed for wildlife protection, migration routes, or other purposes.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 5-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Reptiles and Amphibians </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/rattlesnake.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content13')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content13" class="boxcontent" style="display: none;">
+                        <div> <p> While Yellowstone National Park is often celebrated for its charismatic mammals and bird species, the park is also home to a noteworthy array of reptiles and amphibians. Despite the park's high altitude and often cold climate, these cold-blooded animals have adapted to thrive in Yellowstone's diverse ecosystems.<p>
+
+                            <p> The park hosts six species of reptiles. Perhaps the most commonly seen is the wandering garter snake, which can be found in a variety of habitats, from wetlands to sagebrush plains. These snakes are often spotted near water bodies, where they hunt for amphibians, fish, and invertebrates. <p>
+                            
+                            <p> The park also has two species of lizards: the northern sagebrush lizard and the short-horned lizard. Sagebrush lizards are generally found in dry, sagebrush areas, while short-horned lizards prefer open, sandy areas and are known for their unique defense mechanism of squirting blood from their eyes when threatened.<p>
+                            
+                            <p> As for amphibians, Yellowstone hosts four species of frogs and toads, including the Columbia spotted frog, the boreal chorus frog, the boreal toad, and the tiger salamander, which is actually an amphibian, not a reptile, despite its common name. The boreal chorus frog is particularly interesting, as it can survive freezing temperatures by producing a kind of natural antifreeze.<p>
+                            
+                            <p> The Columbia spotted frog is notable for its adaptation to the park's thermal areas. These frogs often lay their eggs in warm water, which accelerates the development of the eggs and increases the chances of the tadpoles' survival in the often chilly climate.<p>
+                            
+                            <p> In summary, while Yellowstone's reptiles and amphibians might not be as visible or well-known as its larger fauna, they play crucial roles in the park's ecosystems and contribute to its overall biodiversity. Their presence and health offer important insights into environmental changes and ecological balance. If you’d like to learn more about the specific species of reptiles and amphibians you see at Yellowstone, you can visit the National Park Service’s official pages about <a href=” https://www.nps.gov/yell/learn/nature/reptiles.htm”>  reptiles </a> and <a href=”https://www.nps.gov/yell/learn/nature/amphibians.htm”> amphibians </a> at Yellowstone. <p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content14')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content14" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Fishing Bridge - provides opportunities to see a variety of fish species, including cutthroat trout and lake trout.</li>
+                            <li>Yellowstone Lake - offers opportunities to see a variety of fish species, as well as amphibians such as boreal chorus frogs and Columbia spotted frogs.</li>
+                            <li>Beaver Ponds - provides a chance to see western toads and painted turtles.</li>
+                            <li>Thermal Features - offers opportunities to see garter snakes and other reptiles and amphibians that thrive in the geothermal areas.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content15')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content15" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Keep a safe distance from wildlife and use binoculars or a telephoto lens to view animals up close without disturbing them.</li>
+                                <li>Never feed wildlife, as it can lead to dangerous behavior and dependency on human food.</li>
+                                <li>Do not approach or attempt to touch wild animals, even if they appear to be docile or injured.</li>
+                                <li>Stay on designated trails and use pullouts when viewing wildlife from a vehicle to avoid causing traffic congestion.</li>
+                                <li>Be aware of the surrounding environment and stay alert for any changes in animal behavior, which can indicate that the animal feels threatened or stressed.</li>
+                                <li>Respect closures and restrictions in areas that may be closed for wildlife protection, migration routes, or other purposes.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 6-->
+            
+            
+            
+
+        </div>
+
+        <script src="YSNPscript.js"> 
+            
+        </script>
+    </body>
+</html>

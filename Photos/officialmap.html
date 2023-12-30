@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yellowstone Official Map</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    a.back-link {
+      padding: 10px;
+      background: #f1f1f1;
+      color: #333;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100% - 30px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="back-link" onclick="goBack()">Back to previous page</a>
+    <iframe src="https://www.nps.gov/yell/planyourvisit/upload/YELL-GRTE-Tear-Off-Map-2022_508.pdf"></iframe>
+  </div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

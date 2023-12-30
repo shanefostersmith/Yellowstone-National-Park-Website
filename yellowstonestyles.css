@@ -1,0 +1,521 @@
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1a1a1bc3;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Represents the layout of the entire screen in two rows: a nav bar and the page content*/
+#parent-grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+
+/* Represents the navigation bar at the top of the screen*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    flex-grow: 1;
+    overflow-x: scroll;
+    background-color: #056AAC; 
+    justify-content: space-evenly;
+    top: 0;
+    z-index: 100;
+    height: 9%;
+  }
+  
+  /* Represents each option in the navigation bar */
+  .flex-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center; 
+    background-color: black; 
+    font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+/* Change colors of navigation bar items based on user activity */ 
+.flex-item:hover {
+    background-color: #82C5EC;
+  }
+
+.flex-item .active {
+    background-color: #82C5EC;
+    color: inherit;
+}
+
+  .flex-item a {
+    display: flex;              
+    align-items: center;       
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+/* START OF HOMEPAGE LAYOOUT */
+
+  /* Homepage CSS grid to hold rest of screen */
+  .grid-container-home {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid:
+        'photo photo photo'
+        'photo photo photo'
+        'photo photo photo'
+        'quote quote quote'
+        'desc desc desc'
+        'navi contact social';
+    justify-items: center;
+    grid-row-gap: 5vh;
+
+  }
+
+
+.itemPhoto {
+        grid-area: photo;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('homephoto2.jpg');
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+.itemPhoto img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        
+      }
+    
+.itemQuote {
+        grid-area: quote;
+        width: 75%;
+        font-size: 1.75rem;
+        text-align: center; 
+        background-color: #82C5EC;
+        border-radius: 25px;
+      }
+    
+.itemDesc {
+        grid-area: desc;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 1.25rem;
+        border-bottom: 1px solid #82C5EC;
+      }
+
+.itemNavi {
+        grid-area: navi;
+        border-right: 100px black;
+        width: 33.3vw;
+        text-align: center;
+        border-right: 1px solid #82C5EC;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+    
+.itemContact {
+        grid-area: contact;
+        border: 2px black;
+        width: 33.3vw;
+        text-align: center;
+        border-right: 1px solid #82C5EC;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+.itemSocial {
+        grid-area: social;
+        border: 10px black;
+        width: 33.3vw;
+        text-align: center;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+     
+    
+    
+.itemOld {
+        grid-area: auto;
+        text-align: center;
+        max-width: 70vw;
+        margin: 0 auto;
+        padding-right: 20%;
+    }
+    
+.text-overlay {
+        position: absolute;
+        top: 60%;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        font-size: 6rem;
+        font-family: 'Bebas Neue', bold;
+        white-space: nowrap;
+    }
+
+blockquote {
+  font-family: 'Crimson Text', serif;
+}
+
+blockquote ~ p {
+        color: black;
+        
+    }
+    
+p {
+        color: white;
+        font-family: 'Crimson Text', serif;
+    }
+    
+    
+nav {
+        color: white;
+    }
+
+li {
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+    
+a {
+        text-transform: translateX(10%);
+        color: white;
+    }
+
+.itemNavi li {
+  list-style: none;
+}
+
+.itemContact li {
+  list-style: none;
+
+}
+
+.itemSocial li {
+  list-style: none;
+}
+
+h4 {
+  color: #82C5EC;
+  text-align: center;
+  font-family: 'Crimson Text', serif;;
+  font-size: 1.25rem;
+}
+
+
+/* START OF CELL LAYOUT*/
+
+  /* Represents the second row of parent grid. Contains rows of flexboxes */
+  .flex-fullscreen{
+    grid-area:auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    width: 100%;
+    justify-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-y: scroll;
+    gap: 3rem;
+    background-color: #F7F7F8;
+  }
+
+
+  /* Represents the floating cells of an images and dropdown boxes */
+  .flexbox {
+    grid-area: auto;
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #1a1a1bc3;
+    overflow-y: visible;
+    border:solid;
+    border-color: rgba(26, 26, 27, 0.0);
+    border-width: 8px;
+    border-top: 0px;
+    border-radius: 25px;
+    
+  }
+
+  .itemTitle {
+    grid-area: auto;
+    position: relative;
+    grid-column: 1 / 3;
+    width: 100vw;
+    color: white;
+    font-size: 1.75rem;
+    border-bottom: solid 5px black;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Bebas Neue', bold;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.itemTitle img {
+    grid-area: auto;
+    display: block;
+    height: auto;
+    width: 100%;
+    
+}
+
+.introtext {
+    width: auto;
+    text-align: center;
+    background-color: #82C5EC;
+    border-radius: 25px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Crimson Text', serif;
+  }
+
+.introtext h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+  .image-container {
+    grid-area: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .flexbox > .image-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .itemTitle img {
+    width: 100%;
+    min-height: 40vh;
+  }
+
+  .flexbox h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.75rem;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+
+/* Represents an entire expandable box within a flexbox*/
+  .expandbox {
+    grid-area: auto;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
+    border-radius: 15px;
+  }
+  .expandbox img {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+  }
+
+  button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+  /* Represents title of the expandable box*/
+  .boxtitle {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    min-height: 10vh;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  /* Represents dropdown content of the expandable box*/
+  .boxcontent {
+    padding: 1rem;
+    height: auto;
+    overflow-y: auto;
+    flex-grow: 1;
+    transition: height 0.5s ease-in-out;
+  }
+
+
+  /* Create an arrow by putting two borders on a rotated box */
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    margin-right: 20px;
+  }
+
+  .title-text {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .titleWrapper {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+
+
+/* Start of Plan Visit Layout */
+
+.flex-fullscreen2{
+    grid-area:auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    width: 100%;
+    justify-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-y: scroll;
+    gap: 3rem;
+    background-color: #F7F7F8;
+  }
+
+  .flexitem {
+    border-top: 2px solid white;
+    text-align: center;
+  }
+
+  .flexitem p {
+    font-size: 1.2rem;
+  }
+
+  .flexitem ul {
+    align-self: center;
+  }
+  .flexitem li {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+
+@media (max-width: 1000px) {
+    .text-overlay {
+      font-size: 5rem;
+    }
+  }
+
+  
+  @media (max-width: 825px) {
+    .text-overlay {
+      font-size: 4rem;
+    }
+    .flex-item {
+        font-size: 1.25rem; 
+    }
+
+  }
+  
+  @media (max-width: 576px) {
+    .text-overlay {
+      font-size: 3.5rem;
+      white-space: normal;
+    }
+    .flex-item {
+        font-size: 1rem; 
+    }
+  }
+
+
+  @media (min-width: 768px) {
+  .flex-fullscreen {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    display: grid;
+    /*grid-auto-flow: row;*/
+    grid-auto-rows: min-content;
+  }
+
+  .flex-fullscreen .flexbox {
+    width: 40vw;
+  }
+
+  .introtext {
+    grid-column: 1 / -1; /* This will span the entire row */
+    grid-row: 2;
+  }
+
+
+}
+
+@media (min-width: 1250px) {
+    .flex-fullscreen {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      display: grid;
+      /*grid-auto-flow: row;*/
+      grid-auto-rows: min-content;
+    }
+  
+    .flex-fullscreen .flexbox {
+      width:27vw;
+    }
+
+    .itemTitle {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+
+    .introtext {
+        grid-column: 1 / -1; /* This will span the entire row */
+        grid-row: 2;
+      }
+
+  }
+  

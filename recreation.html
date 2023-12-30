@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recreational Activities</title>
+
+    <link href="yellowstonestyles.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts provided by the Google API-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text&family=Oxygen:wght@400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--  overall grid with two columns-->
+        <div id = "parent-grid">
+            
+            <!-- Navigation bar on top-->
+            <div class="flex-container">
+                <div class="flex-item"><a href="homepage.html">Home</a></div>
+                <div class="flex-item"><a href="parkhighlights.html">Park Highlights</a></div>
+                <div class="flex-item"><a href="wildlife.html">Wildlife & Nature</a></div>
+                <div class="flex-item"><a href="recreation.html">Activities</a></div>
+                <div class="flex-item"><a href="Fees&Payment.html">Plan Your Trip</a></div>
+              </div>
+
+
+        <!-- flexcolumn -->
+        <div class = "flex-fullscreen">
+
+            <div class="itemTitle">
+                <div class="titleWrapper" >
+                  <h1 id = "titleWrapper">Recreational Activities</h1>
+                </div>
+                <img src="Photos/activitiesmain.jpeg" alt="Image" id = "topimage">
+            </div>
+
+            <!-- Intro Text-->
+            <div class="introtext">
+                <h3> Yellowstone National Park offers a variety of outdoor activities, including camping, 
+                    fishing, boating, hiking, and wildlife watching. Visitors can explore the park's stunning 
+                    natural landscapes on foot, by boat, or on a scenic drive. Yellowstone also offers educational 
+                    and cultural programs, making it a destination for learning and discovery. With abundant wildlife, 
+                    geothermal features, and breathtaking scenery, Yellowstone is the perfect place for adventurers and 
+                    nature enthusiasts to explore and connect with the great outdoors. </h3>
+
+            </div>
+
+            <!-- Box1-->
+
+            <div class = "flexbox"> 
+
+                <div> <h2> Hiking</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/hikingpath.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content4')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content4" class="boxcontent" style="display: none;">
+                        <div> <p> Yellowstone National Park is a true paradise for hiking enthusiasts, offering a diverse array of trails that traverse an array of unique, breathtaking landscapes. With more than 1,000 miles of trails, the park provides a multitude of opportunities for outdoor exploration and adventure. </p>
+
+                            <p> The park’s trails range from easy walks that are accessible to most, to strenuous hikes that challenge even the most experienced hikers. Some trails take you through dense forests of lodgepole pine, past tranquil creeks and under the canopy of wildflower blooms. Others lead to serene alpine lakes nestled in the mountains or meander alongside rushing rivers.</p>
+                            
+                            <p> For those interested in the park's geothermal wonders, many trails wind through geyser basins, past bubbling mud pots, and near vibrant hot springs. The boardwalks around the Old Faithful area offer an extensive network of trails, providing stunning views of this iconic geyser and the surrounding thermal features. </p>
+                            
+                            <p> In the Canyon area, trails descend into the Yellowstone Grand Canyon, providing awe-inspiring views of the canyon's pastel-colored walls and the powerful Lower and Upper Falls. The rim trails offer panoramic views of the canyon and the opportunity to spot ospreys and eagles soaring above the chasm. </p>
+                            
+                            <p> Hiking in the park’s northern range offers the opportunity to traverse rolling sagebrush valleys, a landscape markedly different from the rest of the park. This area is well-known for its abundant wildlife, and hikers may have the chance to spot herds of bison or elk, and possibly even wolves or grizzly bears from a safe distance.</p>
+                            
+                            <p> In the park’s backcountry, hikers can truly immerse themselves in the wild, untouched beauty of Yellowstone. Numerous trails lead into these remote areas, offering a sense of solitude and the chance to connect with nature.</p>
+                            
+                            <p> With such a variety of trails and landscapes to explore, hiking in Yellowstone National Park can cater to a wide range of interests and abilities, providing an unforgettable experience for every outdoor enthusiast.</p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content5')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content5" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Mount Washburn: This popular trail offers panoramic views of the park and is an excellent place to spot wildflowers and wildlife, including bighorn sheep.</li>
+                            <li>Lone Star Geyser Trail: This trail leads to an impressive, predictably erupting geyser and offers a quieter alternative to the busy geysers near Old Faithful.</li>
+                            <li>Fairy Falls Trail: This hike leads to a beautiful waterfall and offers a side trail to the Grand Prismatic Overlook for a stunning view of the famous hot spring.</li>
+                            <li>Artist Point to Point Sublime: This trail along the rim of the Grand Canyon of the Yellowstone offers breathtaking views of the canyon and the Lower Falls.</li>
+                            <li>Specimen Ridge Trail: This challenging trail takes hikers through diverse landscapes, with opportunities to see petrified trees and abundant wildlife.</li>
+                            <li>Blacktail Plateau Drive: This trail follows a one-way dirt road and is a great place to see wildlife, including wolves, away from the crowds.</li>
+                          </ul>
+                        <p> You can see the full list of hiking trails avaliable at Yellowstone National Park at the National Park Service's
+                            <a href = "https://www.nps.gov/yell/planyourvisit/hiking.htm"> hiking page</a>.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content6')"> 
+                        <span class="title-text">
+                            Safety and Special Consideration
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content6" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Stay on designated trails to avoid damaging the fragile ecosystem and reduce the risk of encountering dangerous wildlife.</li>
+                                <li>Come prepared with appropriate gear, including sturdy hiking shoes, a map, and plenty of water and food.</li>
+                                <li>Be aware of the surrounding environment and stay alert for changes in weather or animal behavior.</li>
+                                <li>Carry bear spray and know how to use it in case of a bear encounter.</li>
+                                <li>Make noise while hiking to alert wildlife of your presence and reduce the risk of startling an animal.</li>
+                                <li>Do not approach or attempt to touch wild animals, even if they appear to be docile or injured.</li>
+                                <li>Respect closures and restrictions in areas that may be closed for wildlife protection, trail maintenance, or other purposes.</li>
+                                <li>Leave no trace and pack out all trash and dispose of it properly to prevent littering and protect the environment.</li>
+                              </ul>                              
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 2-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Camping </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/camping.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content1')"> 
+                        <span class="title-text">
+                            General Information
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content1" class="boxcontent" style="display: none;">
+                        <div> <p> Camping in Yellowstone National Park is a memorable experience that brings visitors closer to the park's 
+                            natural beauty. The park has 12 campgrounds with over 2,000 sites, ranging from RV-friendly sites with some amenities 
+                            to more rustic, tent-only sites. Many campgrounds are located near major attractions and trailheads, providing a convenient 
+                            base for exploration. Campers can spend their days hiking, wildlife watching, or visiting geothermal features, and their 
+                            nights under a canopy of countless stars. Due to the park's popularity, securing a campsite, especially during peak season, 
+                            often requires advance reservations. With its diverse landscapes and abundant wildlife, camping in Yellowstone offers an 
+                            unparalleled opportunity for immersion in the wild. </p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content2')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content2" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Madison Campground: Located near the Madison River, a popular fishing spot. It's also centrally located to various park attractions.</li>
+                            <li>Bridge Bay Campground: Close to Yellowstone Lake, providing access to fishing and boating.</li>
+                            <li>Canyon Campground: Situated near the Grand Canyon of the Yellowstone, offering spectacular views and hiking opportunities.</li>
+                            <li>Mammoth Campground: Open year-round, located near Mammoth Hot Springs.</li>
+                            <li>Grant Village Campground: Located on the southwest shore of Yellowstone Lake, close to fishing and boating spots.</li>
+                            <li>Slough Creek Campground: A more secluded area in the Lamar Valley, great for wildlife viewing.</li>
+                          </ul>
+
+                          <p> You can see the full list of campgrounds and their fees at Yellowstone National Park at the National Park Service's
+                            <a href = "https://www.nps.gov/yell/planyourvisit/campgrounds.htm"> campgrounds page</a>.
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content3')"> 
+                        <span class="title-text">
+                            Safety and Special Considerions
+                        </span>
+                        <span class="arrow"></span> 
+                    </button>
+                    <div id = "content3" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Store food and scented items properly to avoid attracting wildlife to your campsite.</li>
+                                <li>Check for fire restrictions before starting a campfire.</li>
+                                <li>Never feed wildlife and maintain a safe distance from all animals.</li>
+                                <li>Stay on established trails and roads to protect both you and the park's natural features.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box3-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Fishing </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/fishing.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content7')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content7" class="boxcontent" style="display: none;">
+                        <div> <p> Fishing in Yellowstone National Park offers anglers a unique opportunity to cast their lines in 
+                            some of the most pristine and scenic waters in North America. The park's rivers, lakes, and streams are
+                             home to a variety of fish species, including native cutthroat trout, rainbow trout, and brown trout. 
+                             Whether it's fly fishing in the famous Yellowstone River, angling in the vast Yellowstone Lake, or exploring 
+                             the park's many backcountry streams, anglers can enjoy a world-class fishing experience amidst breathtaking 
+                             natural beauty. It's important to note that Yellowstone has specific fishing regulations to protect its aquatic 
+                             ecosystems, so anglers should familiarize themselves with these rules before starting their adventure.</p>
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content8')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content8" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Yellowstone River: Offers opportunities to catch cutthroat trout.</li>
+                            <li>Firehole River: Known for its brown and rainbow trout.</li>
+                            <li>Madison River: A popular spot for fly fishing.</li>
+                            <li>Yellowstone Lake: The largest high-elevation lake in North America is home to native cutthroat trout.</li>
+                            <li>Lamar River: Known for its excellent fly fishing opportunities.</li>
+                            <li>Slough Creek: Offers excellent fishing for cutthroat trout in a beautiful setting.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content9')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+
+                    <div id = "content9" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li> Note the fishing season is from the end of May to the end of October. </li>
+                                <li>Ensure you have a valid Yellowstone fishing permit.</li>
+                                <li>Understand and follow all catch-and-release regulations.</li>
+                                <li>Avoid wading in or near thermal features.</li>
+                                <li>Use barbless hooks to minimize harm to fish.</li>
+                              </ul>
+
+                              <p> You can see all the fishing regulations and permits at Yellowstone National Park at the National Park Service's
+                                <a href = "https://www.nps.gov/yell/planyourvisit/fishing.htm"> fishing page</a>.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 4-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Wildlife Viewing</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/buffalo2.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content10')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content10" class="boxcontent" style="display: none;">
+                        <div> <p> Yellowstone National Park is a premier destination for wildlife viewing, offering visitors the chance to observe a diverse array of animals in their natural habitats. The park is home to large mammals like bison, elk, and bears, as well as wolves, which were successfully reintroduced in the 1990s. The northern range, often called the Serengeti of North America, is especially rich in wildlife. </p>
+
+                            <p> Bird watchers can spot numerous species, from waterfowl like pelicans and swans to raptors such as bald eagles and ospreys. The park's rivers and lakes provide opportunities to see beavers, river otters, and several fish species, while moose sightings are more likely in wetland areas and along streams. </p>
+                            
+                            <p> Yellowstone's unique thermal areas offer the chance to view heat-loving microorganisms that create vibrant, colorful displays. Overall, wildlife viewing in Yellowstone is a captivating experience that showcases the importance of preserving these wild spaces and the incredible biodiversity they support. </p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content11')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content11" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Lamar Valley: Known as the "Serengeti of North America," this area is a great place to spot wolves, herds of bison, pronghorn, and in the winter, bighorn sheep.</li>
+                            <li>Hayden Valley: This wide, open valley is an excellent place to view herds of bison, especially in the early morning or late evening. Grizzly bears are also frequently seen in this area.</li>
+                            <li>Tower-Roosevelt Area: This region is a good place to see black bears and grizzly bears, particularly in the spring and early summer. Osprey and other birds of prey can also be observed here.</li>
+                            <li>Norris Geyser Basin: In addition to its geothermal features, this area is a habitat for a variety of bird species, and occasionally, bison and elk.</li>
+                            <li>Yellowstone Lake: The areas around the lake, especially at higher elevations, are home to grizzly bears, and the lake itself is home to native cutthroat trout.</li>
+                            <li>Madison River: This area is a good place to spot elk, especially in the fall during the rut, and the river is a popular spot for fly fishing.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content12')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content12" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Keep a safe distance from wildlife and use binoculars or a telephoto lens to view animals up close without disturbing them.</li>
+                                <li>Never feed wildlife, as it can lead to dangerous behavior and dependency on human food.</li>
+                                <li>Do not approach or attempt to touch wild animals, even if they appear to be docile or injured.</li>
+                                <li>Stay on designated trails and use pullouts when viewing wildlife from a vehicle to avoid causing traffic congestion.</li>
+                                <li>Be aware of the surrounding environment and stay alert for any changes in animal behavior, which can indicate that the animal feels threatened or stressed.</li>
+                                <li>Respect closures and restrictions in areas that may be closed for wildlife protection, migration routes, or other purposes.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 5-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Boating </h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/boating.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content13')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content13" class="boxcontent" style="display: none;">
+                        <div> <p> Boating in Yellowstone National Park provides visitors with a unique perspective to enjoy the park's stunning landscapes and abundant wildlife. Yellowstone Lake, the largest high-elevation lake in North America, is a popular destination for boating enthusiasts. With over 110 miles of shoreline, the lake offers ample opportunities for exploration, relaxation, and wildlife watching, including spotting waterfowl and even the occasional moose or elk near the shore. </p>
+
+                            <p> In addition to Yellowstone Lake, Lewis Lake and Shoshone Lake also permit boating, offering a more secluded experience. Paddle sports like canoeing and kayaking are popular on these lakes, allowing for a serene and intimate connection with nature. </p>
+                            
+                            <p> Motorized boating is permitted on Yellowstone Lake, though there are restrictions on motor size and noise levels to protect the park's natural resources and minimize disturbance to wildlife. Sailing and guided boat tours are also available, providing visitors with a leisurely way to explore the lake and learn about the park's history and ecology.</p>
+                            <p> Overall, boating in Yellowstone offers a refreshing and unique way to experience the park's natural wonders, from the majestic lake vistas to the diverse wildlife that calls this area home. </p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content14')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content14" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Yellowstone Lake: The largest body of water in the park, it's ideal for both motorized and non-motorized boats.</li>
+                            <li>Lewis Lake: This is the third largest lake in the park, allowing motorized and non-motorized boats.</li>
+                            <li>Shoshone Lake: Accessible by trail or by paddling up the Lewis River Channel from Lewis Lake, this lake is open to non-motorized boats.</li>
+                          </ul>
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content15')"> 
+                        <span class="title-text">
+                            Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content15" class="boxcontent" style="display: none;">
+                        <div> 
+                            <ul>
+                                <li>Understand and follow all boating regulations for the park, including closures and restrictions.</li>
+                                <li>Always wear a life jacket while on the water.</li>
+                                <li>Check the weather before setting out; storms can come up quickly and create dangerous conditions.</li>
+                                <li>Clean, drain, and dry your boat before and after use to prevent the spread of aquatic invasive species.</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box 6-->
+            <div class = "flexbox"> 
+
+                <div> <h2> Guided Tours</h2></div>
+
+                <div class="image-container"> 
+                    <img src="Photos/tourgroup.jpg">
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content16')"> 
+                    <span class="title-text">
+                        General Information
+                    </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content16" class="boxcontent" style="display: none;">
+                        <div> <p> Guided tours in Yellowstone National Park provide visitors with a wealth of knowledge and unique experiences as they explore the park's diverse landscapes, geothermal features, and wildlife. These tours are led by knowledgeable guides who share their expertise on the park's history, geology, ecology, and ongoing conservation efforts. </p>
+
+                            <p> There are a variety of guided tours available to suit different interests and preferences. Bus tours offer a comfortable way to visit popular attractions and viewpoints while learning about the park from an experienced guide. These tours often include stops at iconic locations like Old Faithful, the Grand Canyon of the Yellowstone, and various geyser basins. </p>
+                            
+                            <p> For those seeking a more immersive experience, guided hikes and backpacking trips allow visitors to explore the park's backcountry and remote areas, often with a focus on specific themes like wildlife tracking, photography, or wildflower identification. These trips can range from leisurely day hikes to multi-day excursions. </p>
+                            
+                            <p> Visitors interested in Yellowstone's wildlife can join specialized wildlife tours, where experienced guides help spot and safely observe animals such as bison, elk, bears, and wolves. These tours often take place in the early morning or late evening when wildlife is most active.</p>
+                            
+                            <p> In the winter months, snow coach and snowmobile tours provide access to Yellowstone's snow-covered landscapes, offering a unique perspective on the park's beauty. These tours may include stops at popular thermal features or provide opportunities for wildlife viewing in the quieter winter season. </p>
+                            
+                            <p> By choosing a guided tour in Yellowstone National Park, visitors can gain a deeper understanding of the park's natural wonders and the importance of protecting this unique ecosystem while enjoying a memorable and engaging experience. </p>
+                            
+                            </div>
+                    </div>
+                </div>
+                
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content17')"> 
+                        <span class="title-text">
+                            Key Locations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content17" class="boxcontent" style="display: none;">
+                        <ul>
+                            <li>Yellowstone National Park Lodges: Offers a variety of tours, including bus, boat, horseback, and more.</li>
+                            <li>Ranger-led Programs: The National Park Service offers a variety of guided walks and talks throughout the park.</li>
+                            <li>Private Tour Companies: Numerous private companies offer guided tours, including wildlife watching, photography tours, and more.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <div class="expandbox">
+                    <button class="boxtitle" onclick="toggleContent('content18')"> 
+                        <span class="title-text">
+                           Safety and Special Considerations
+                        </span>
+                        <span class="arrow"></span>
+                    </button>
+                    <div id = "content18" class="boxcontent" style="display: none;">
+                        <div> 
+                            <p> 
+                                Please be respectful of your tour guides and follow their safety instructions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+
+        </div>
+
+        <script src="YSNPscript.js"> 
+            
+        </script>
+    </body>
+</html>
